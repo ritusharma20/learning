@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        <style>
+        body, html {
+            height: 90%;
+            margin: 0;
+            background-image: url('images/l1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .contact-form {
+            background: rgba(255, 255, 255, 0.8); /* White with transparency */
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 400px;
+            margin: auto;
+            margin-top: 100px; /* Center vertically */
+        }
+        .form-control {
+            border-radius: 5px;
+        }
+        .map{
+            margin-top: 50px;
+            background-image: url('images/l3.jpeg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            margin-bottom: 40px;
+        }
+        .map-container {
+            max-width: 600px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .navbar {
+            background-color: #f5c34c; /* Warm yellow */
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #d1a700 !important; /* Darker yellow on hover */
+        }
+        .footer {
+            background-color: #343a40; /* Dark footer */
+            color: white;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #f5c34c;
+        }
+        .footer a:hover {
+            color: #d1a700;
+        }
+        .contact-details {
+            background-color: #f8f9fa; /* Light background */
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-item {
+            margin: 15px 0;
+        }
+        .contact-item i {
+            margin-right: 10px;
+            color: #007bff; /* Bootstrap primary color */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">LEARNING</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Forms
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="registeration.html">Register</a>
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="Forgot.html">Forgot Password</a>
+                        <a class="dropdown-item" href="change.html">Change Password</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="terms.html">Terms and Conditions</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+<div class="contact-form">
+    <h2 class="text-center">Contact Us</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter address" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+</div>
+<div class="map">
+<div class="map-container">
+    <h4 class="text-center" style="text-decoration-color: #f5c34c; color: #defb76;">Our Location</h4>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.788658876584!2d85.12358927517788!3d25.611938077446293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x140d7ef4cbe1e381%3A0x775ba2c14e2ee345!2sPatna%20Women%E2%80%99s%20College!5e0!3m2!1sen!2sin!4v1727508742409!5m2!1sen!2sin"
+     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+</div>
+<div class="contact-details">
+    <h2 class="text-center">Contact Us</h2>
+    <div class="contact-item">
+        <i class="fa fa-envelope" style="font-size:40px;color:red;"></i>
+        <span>Gmail: <a href="mailto:sonam.com">sonam@mca@gmail.com</a></span>
+    </div>
+    <div class="contact-item">
+        <i class="fa fa-phone" style="font-size:40px;color:red;"></i>        <span>Phone: <a href="tel:+1234567890">+1 234 567 890</a></span>
+    </div>
+    <div class="contact-item">
+        <i class="fa fa-youtube" style="font-size:40px;color:red;"></i>        <span>YouTube: <a href="https://www.youtube.com" target="_blank">Our Channel</a></span>
+    </div>
+    <div class="contact-item">
+        <i class="fa fa-instagram" style="font-size:40px;color:red;"></i>        <span>Instagram: <a href="https://www.instagram.com" target="_blank">@ourprofile</a></span>
+    </div>
+</div>
+</div>
+<footer class="footer text-center mt-5">
+    <div class="container">
+        <span>© 2024 LEARNING. All Rights Reserved. | <a href="terms.html">Privacy Policy</a></span>
+    </div>
+</footer>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

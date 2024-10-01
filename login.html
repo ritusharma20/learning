@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-image: url('images/l1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .registration-form {
+            background: rgba(255, 255, 255, 0.8); /* White with transparency */
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 400px;
+            margin: auto;
+            margin-top: 100px; /* Center vertically */
+        }
+        .form-control {
+            border-radius: 5px;
+        }
+
+        .navbar {
+            background-color: #f5c34c; /* Warm yellow */
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #d1a700 !important; /* Darker yellow on hover */
+        }
+        .footer {
+            background-color: #343a40; /* Dark footer */
+            color: white;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #f5c34c;
+        }
+        .footer a:hover {
+            color: #d1a700;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">LEARNING</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Forms
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="registeration.html">Register</a>
+                    <a class="dropdown-item" href="login.html">Login</a>
+                    <a class="dropdown-item" href="Forgot.html">Forgot Password</a>
+                    <a class="dropdown-item" href="change.html">Change Password</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terms.html">Terms and Conditions</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="registration-form">
+    <h2 class="text-center">Login</h2>
+    <form>
+      
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" required>
+        </div>
+       
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+        <a href="registeration.html">Not Registered??</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Forgot.html">Forgot Password??</a>
+        <a href="change.html">Change Password??</a>
+    </form>
+</div>
+<footer class="footer text-center mt-5">
+    <div class="container">
+        <span>© 2024 LEARNING. All Rights Reserved. | <a href="terms.html">Privacy Policy</a></span>
+    </div>
+</footer>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
